@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Webtoon</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .webtoon-container {
+      width: 100%;
+      max-width: 1754px; /* original page width */
+    }
+
+    .webtoon-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Optional spacing between pages */
+    .webtoon-container img + img {
+      margin-top: 0; /* set to e.g. 8px if you want gaps */
+    }
+
+    /* Nice padding on big screens */
+    @media (min-width: 1200px) {
+      body {
+        padding: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="webtoon-container">
+    <img src="1.png" loading="lazy" alt="1">
+    <img src="2.png" loading="lazy" alt="2">
+    <img src="3.png" loading="lazy" alt="3">
+    <img src="4.png" loading="lazy" alt="4">
+    <img src="5.png" loading="lazy" alt="5">
+    <img src="6.png" loading="lazy" alt="6">
+    <img src="7.png" loading="lazy" alt="7">
+    <img src="8.png" loading="lazy" alt="8">
+    <img src="9.png" loading="lazy" alt="9">
+    <img src="10.png" loading="lazy" alt="10">
+  </div>
+
+</body>
+</html>
